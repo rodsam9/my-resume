@@ -11,6 +11,7 @@ import reactLogo from "../images/react-svgrepo-com.svg";
 import bootstrapLogo from "../images/bootstrap-4-logo-svgrepo-com.svg";
 
 class Skills extends Component {
+    
     render() {
     const settings = {
         dots: false,
@@ -24,7 +25,17 @@ class Skills extends Component {
         centerMode: true,
         swipeToSlide: true,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    
+                }
+            }
+        ]
       };
+
     return (
         <div className="Skills">
             <Slider {...settings}>

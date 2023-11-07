@@ -15,7 +15,7 @@ function Hero() {
             <div>
             <h1 className='name'>Sam Rodriguez</h1>
             <p> I'm a {' '}
-                <Typical loop={Infinity} wrapper='b' steps={['Software Engineer 💻', 1000,'Frontend Developer 👨‍💻', 1000, 'AWS Cloud Practicioner ☁️', 1000, 'Bodybuilder 💪', 1000, 'Magician 🎩', 1000, 'Youtuber 🎥', 1000, 'Gamer 🎮', 1000, 'Beatboxer 🔈', 1000]}/>
+                <Typical className="looped" loop={Infinity} wrapper='b' steps={['Software Engineer 💻', 1000,'Frontend Developer 👨‍💻', 1000, 'AWS Cloud Practicioner ☁️', 1000, 'Bodybuilder 💪', 1000, 'Magician 🎩', 1000, 'Youtuber 🎥', 1000, 'Gamer 🎮', 1000, 'Beatboxer 🔈', 1000]}/>
             </p>
             <a href="https://github.com/rodsam9">
                 <FontAwesomeIcon icon={faGithub} className='icon' size='2x'/>

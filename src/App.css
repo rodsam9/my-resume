@@ -204,6 +204,11 @@ footer {
   background-color: lightgray;
   display: flex;
   justify-content: space-around;
+}
+.footer-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 footer p {
@@ -223,4 +228,118 @@ footer p {
 }
 .portfolio:hover {
   color: white;
+}
+
+/* Mobile View */
+@media screen and (max-width: 600px){
+  /* Container that holds everything */
+.App {
+  width: 100%;
+  margin: -20px auto;
+}
+
+/* Navigation Bar */
+.NavBar {
+  display: none;
+}
+
+/* Hero section */
+.workspace {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.Hero {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.Hero h1{
+  margin: 0 auto;
+}
+.Hero p {
+  margin: 5px auto 15px auto;
+}
+/* Work Experience section */
+
+.job {
+  flex-direction: column;
+  width: 95%;
+}
+.job-details {
+  width: 100%;
+  border: none;
+}
+.job-description {
+  width: 90%;
+}
+
+/* Skills section */
+.slick-slider {
+  margin: 20px 0 0 0;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, rgb(229, 229, 229), white 50%, rgb(229, 229, 229));
+}
+
+
+/* Volunteer experience section */
+
+.volunteer-experience {
+  margin: 0 auto;
+  width: 95%;
+}
+.Volunteer h1 {
+  text-align: center;
+}
+
+.row {
+  justify-content: space-around;
+  margin: 0 20px;
+}
+.row2 {
+  margin: -20px 20px 0 20px;
+}
+.service {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Education section */
+.Education {
+  width: 90%;
+  margin: 0 auto;
+}
+.Education h1 {
+  text-align: center;
+}
+.container {
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #007acd;
+}
+.graduation {
+  width: 150px;
+  height: 150px;
+}
+.degree {
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+  background-color: lightgray;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer-message {
+  font-size: 18px;
+  margin-bottom: -10px;
+}
+
 }
