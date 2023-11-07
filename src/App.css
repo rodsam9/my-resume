@@ -1,38 +1,226 @@
+
+html {
+  background-color: rgb(70, 70, 70);
+}
+
+/* Container that holds everything */
 .App {
+  width: 960px;
+  margin: 20px auto;
+  background-color: white;
+}
+
+/* Navigation Bar */
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+
+}
+.nav-btn {
+  border: none;
+  background-color: white;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  color: black;
+}
+
+/* Hero section */
+.workspace {
+  width: 300px;
+  margin-left: 100px;
+}
+.name {
+  margin-right: 100px;
+  margin-bottom: -10px;
+  font-size: 3rem;
+}
+.Hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.icon {
+  color: lightgray;
+  margin-right: 15px;
+}
+.icon:hover {
+  color: black;
+  cursor: pointer;
+}
+
+
+/* Work Experience section */
+.Work {
+  margin-top: 50px;
+}
+.Work h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.break {
+  height: 5px;
+  width: 100px;
+  background-color: #007acd;
+  margin: -10px auto 20px auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.work-experience {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 30px;
+}
+.job:hover {
+  background-color: rgb(212, 212, 212);
+  cursor:crosshair;
+}
+.company {
+  color:#007acd;
+  font-weight: bold;
+}
+.job-details {
+  width: 350px;
+  text-align: center;
+  border-right: 1px solid black;
+}
+.job-description {
+  width: 500px;
+  margin-left: 5px;
+  padding: 0 20px;
+}
+.website-link {
+  color: gray;
+}
+.website-link:hover {
+  color: black;
+}
+
+/* Skills section */
+.skill:hover {
+  size: 150%;
+}
+.slick-slider {
+  padding: 20px 50px;
+  margin: 50px auto;
+  background-image: linear-gradient(to right, rgb(229, 229, 229), white 50%, rgb(229, 229, 229));
+}
+.slick-slide {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.slack-slide:focus{
+  outline: 0;
+  outline: none;
+}
+
+/* Volunteer experience section */
+.volunteer-experience {
+  border: 1px solid black;
+  margin: 30px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+.volunteer-experience:hover {
+  background-color: lightgray;
+  cursor: crosshair;
+}
+.Volunteer h1 {
+  text-align: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -30px;
+}
+.church {
+  color: #007acd;
+  font-weight: bold;
+}
+.service {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* Education section */
+.Education {
+  margin-top: 50px;
+  padding-bottom: 70px;
+}
+.Education h1 {
+  text-align: center;
+}
+.Education .break {
+  margin-bottom: -15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 50px;
+  border-radius: 30px;
+  background-color: lightgray;
+}
+.container:hover {
+  background-color: #007acd;
+  cursor: pointer;
+}
+.graduation {
+  width: 300px;
+  height: 300px;
+}
+.degree p{
+  margin-top: -15px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Footer */
+footer {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer p {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.icon-footer {
+  margin: 10px;
+  color: black;
+}
+.icon-footer:hover {
+  color: #007acd;
+}
+.portfolio {
+  color: black;
+}
+.portfolio:hover {
+  color: white;
 }
